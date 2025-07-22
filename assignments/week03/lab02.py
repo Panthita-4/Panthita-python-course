@@ -18,21 +18,21 @@ if entered_pin == pin:
         if choice == "1":
            print(f"Your balance is{balance}")
         elif choice == "2":
-           amount = float(input("Enter amount to withdraw"))
+           amount = float(input("Enter amount to withdraw:"))
            if amount > balance:
-           print("Your balance is insufficient.")
+              print("Your balance is insufficient.:")
            else:
-           balance-=amount
-           print(f"{amount} withdraw.New balance :{balance}")
+              balance-=amount
+              print(f"{amount} withdraw.New balance: {balance}")
         elif choice == "3":
-           amount=float(input("Enter the amount of money you want to deposit."))
+           amount=float(input("Enter the amount of money you want to deposit:"))
            balance+=amount
-           print({amount}deposit.new balance{balance})
+           print(f"{amount} deposit.New balance: {balance}")
         elif choice == "4":
            print("Exit") 
            break
         else:
-           print("Invalid option. Please try again.")       
+           print("Invalid option. Please try again.:")       
 else:
-    print("Invalid PIN")
+    print("Invalid PIN:")
 
